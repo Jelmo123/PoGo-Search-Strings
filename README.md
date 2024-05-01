@@ -1,16 +1,28 @@
 # PoGo-Search-Strings
 
-Below you'll find useful search strings for finding good pve or pvp pokemon. For pve, data was extracted from the top attackers list on Gamepress (https://gamepress.gg/pokemongo/attackers-tier-list). For pvp, the export to csv function on the Pvpoke rankings page was used (https://pvpoke.com/rankings/). All search strings are automatically generated and can easily be updated.
+Below you'll find some useful search strings for finding good PvE or PVP pokemon. For PvE, data was extracted from the top attackers list on Gamepress (https://gamepress.gg/pokemongo/attackers-tier-list). For PVL, the export to csv function on the Pvpoke rankings page was used (https://pvpoke.com/rankings/). All search strings are automatically generated and can easily be updated.
 
 # On search string generation
 
-Excluding or including shadow and regional pokemon is a little tricky, as you need a different exclusion filters for each combination of shadow, non-shadow, regional, and non-regional. Additionally, you need to use the typing difference of regional variants to correctly exclude them as there is something called the regional exclusion bug (see https://leidwesen.github.io/SearchPhrases/). Here is a list of the correct exclusion filter for each combination of shadowness and region.
+Excluding or including shadow and regional pokemon is a little tricky, as you need a different exclusion filter for each combination of shadow, non-shadow, regional, and non-regional. Additionally, you need to use the typing difference of regional variants to correctly exclude them as there is something called the regional exclusion bug (see https://leidwesen.github.io/SearchPhrases/). Here is a tablr of the correct exclusion filter for each combination of shadowness and region.
 
-| Combination | Exclusion filter |
-|-------------|------------------|
-| feef        |                  |
-|             |                  |
-|             |                  |
+| Combination  | Exclusion filter                       |
+|--------------|----------------------------------------|
+| N, SN, R, SR | N/A                                    |
+| N, SN, R     | &!name,!shadow,!type                   |
+| N, SN, SR    | &!name,shadow,!type                    |
+| N, R, SR     | &!name,!shadow,type                    |
+| SN, R, SR    | &!name,shadow,type                     |
+| N, SN        | &!name,!type                           |
+| N, R         | &!name,!shadow                         |
+| N, SR        | &!name,!shadow,type&!name,shadow,!type |
+| SN, R        | &!name,shadow,type&!name,!shadow,!type |
+| SN, SR       | &!name,shadow                          |
+| R, SR        | &!name,type                            |
+| N            | &!name,!shadow&!name,!type             |
+| SN           | &!name,shadow&!name,!type              |
+| R            | &!name,!shadow&!name,type              |
+| SR           | &!name,shadow&!name,type               |
 
 Be aware of the following:
 - Search strings cannot be chained. For example, if you want to only show pokemon from the S and A+ tiers, concatenating them won't results in a valid search string.
