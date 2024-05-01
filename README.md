@@ -1,6 +1,6 @@
 # PoGo-Search-Strings
 
-Below you'll find some useful search strings for finding good PvE or PVP pokemon. For PvE, data was extracted from the top attackers list on Gamepress (https://gamepress.gg/pokemongo/attackers-tier-list). For PVL, the export to csv function on the Pvpoke rankings page was used (https://pvpoke.com/rankings/). All search strings are automatically generated and can easily be updated.
+Below you'll find some useful search strings for finding good PvE or PVP pokemon. For PvE, data was extracted from the top attackers list on Gamepress (https://gamepress.gg/pokemongo/attackers-tier-list). For PVP, the export to csv function on the Pvpoke rankings page was used (https://pvpoke.com/rankings/). All search strings are automatically generated and can easily be updated.
 
 # On search string generation
 
