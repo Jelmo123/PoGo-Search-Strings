@@ -4,7 +4,7 @@ Below you'll find some useful search strings for finding good PvE or PVP pokemon
 
 # On search string generation
 
-Excluding or including shadow and regional pokemon is a little tricky, as you need a different exclusion filter for each combination of shadow, non-shadow, regional, and non-regional. Additionally, you need to use the typing difference of regional variants to correctly exclude them as there is something called the regional exclusion bug (see https://leidwesen.github.io/SearchPhrases/). Here is a tablr of the correct exclusion filter for each combination of shadowness and region.
+Excluding or including shadow and regional pokemon is a little tricky, as you need a different exclusion filter for each combination of shadow, non-shadow, regional, and non-regional. Additionally, you need to use the typing difference of regional variants to correctly exclude them as there is something called the regional exclusion bug (see https://leidwesen.github.io/SearchPhrases/). So, for example, if you just want shadow exeggutors and non-shadow alolan exeggutors to show up, you should use the following search string with exclusion filters: "exeggutor&!exeggutor,shadow,dragon&!exeggutor,!shadow,!dragon". Here is a table of the exclusion filters for each combination of shadowness and region (N = Normal, SN = Shadow Normal, R = Regional, SR = Shadow Regional).
 
 | Combination  | Exclusion filter                       |
 |--------------|----------------------------------------|
