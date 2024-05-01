@@ -1,5 +1,22 @@
 # PoGo-Search-Strings
 
+Below you'll find useful search strings for finding good pve or pvp pokemon. For pve, data was extracted from the top attackers list on Gamepress (https://gamepress.gg/pokemongo/attackers-tier-list). For pvp, the export to csv function on the Pvpoke rankings page was used (https://pvpoke.com/rankings/). All search strings are automatically generated and can easily be updated.
+
+# On search string generation
+
+Excluding or including shadow and regional pokemon is a little tricky, as you need a different exclusion filters for each combination of shadow, non-shadow, regional, and non-regional. Additionally, you need to use the typing difference of regional variants to correctly exclude them as there is something called the regional exclusion bug (see https://leidwesen.github.io/SearchPhrases/). Here is a list of the correct exclusion filter for each combination of shadowness and region.
+
+| Combination | Exclusion filter |
+|-------------|------------------|
+| feef        |                  |
+|             |                  |
+|             |                  |
+
+Be aware of the following:
+- Search strings cannot be chained. For example, if you want to only show pokemon from the S and A+ tiers, concatenating them won't results in a valid search string.
+- There is a bug with excluding Galarian slowpoke
+- If there are multiple regional variants of the same pokemon (e.g. Meowth), the results of the search string may not be as expected.
+
 Gamepress Top Attackers (S Tier)
 ```
 groudon,rayquaza,kyogre,tyranitar,sceptile,blaziken,gengar,metagross,mewtwo,salamence,dragonite,garchomp,palkia,kartana,mamoswine,terrakion,chandelure,rhyperior,rampardos&!groudon,!shadow&!rayquaza,!shadow&!kyogre,!shadow&!sceptile,!shadow&!blaziken,!shadow&!gengar,!shadow&!metagross,shadow&!mewtwo,shadow&!salamence,shadow&!dragonite,shadow&!garchomp,shadow&!palkia,!shadow&!kartana,!shadow&!mamoswine,shadow&!terrakion,!shadow&!chandelure,shadow&!rhyperior,shadow&!rampardos,shadow
