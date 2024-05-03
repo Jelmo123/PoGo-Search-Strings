@@ -26,6 +26,7 @@ Excluding or including shadow and regional pokemon is a little tricky, as you ne
 
 Be aware of the following:
 - Search strings cannot be chained. For example, if you want to only show pokemon from the S and A+ tiers, concatenating them won't results in a valid search string.
+- Press 'Show evolutionary line' to view prevolutions. Be aware that if the prevolution is also in the search string and has a more restrictive exclusion filter, this filter will also apply to the final evolved form.
 - There is a bug with excluding Galarian slowpoke
 - If there are multiple regional variants of the same pokemon (e.g. Meowth), the results of the search string may not be as expected.
 
